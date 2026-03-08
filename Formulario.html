@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="CascadaFormulario.css">
+</head>
+<body>
+    <main class="card">
+        <h1>Registro de alumnos</h1>
+        <p>Completa los datos</p>
+        <form action="#" method="post">
+        <Label for="Nombre">Nombre completo *</Label>
+        <input type="text" id="Nombre" name="Nombre"
+        placeholder="Ej: Ramon Ayala"
+        maxlength="45" required>
+        <label for="grupo">Grupo *</label>
+        <Select id="grupo" name="grupo" required>
+            <option value="">Selecciona...</option>
+            <option value="A">Grupo A</option>
+            <option value="B">Grupo B</option>
+            <option value="C">Grupo C</option>
+            <option value="D">Grupo D</option>
+        </Select>
+        <label for="correo">Correo *</label>
+        <input type="email" id="correo" name="correo" placeholder="Ej:ejemplo01@gmail.com" required>
+        <label for="telefono">Telefono</label>
+        <input type="tel" name="telefono" id="telefono" placeholder="6131234567" maxlength="13">
+        <label for="nac">Fecha de nacimiento</label>
+        <input type="date" name="nac" id="nac">
+        <label for="comentarios">comentarios:</label>
+        <textarea name="comentarios" id="comentarios" rows="4"
+        placeholder="Escribe algo..."></textarea>
+        <button type="submit" class="btn">Enviar</button>
+    </form>
+    </main>
+</body>
+</html>
